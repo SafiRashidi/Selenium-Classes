@@ -1,0 +1,56 @@
+approach to select the check box single
+
+1.inspect the checkbox
+2.write down the correct locator in the DOM
+3. use find Element  the find the check Box
+4.click on it
+
+
+If I want to check that check box is selected or not?
+  checkbox.isSelected();---> TRUE (means selected)
+
+Preferred Approach when it comes to multiple checkboxes
+
+1.inspect them in the DOM
+2. write the locator in such a way that it is able to select all the required checkboxes
+3. use find Elements to get all those checkboxes
+4.iterate through the list
+5. while iteration look for your desired checkbox (inspect the DOM to see which information provides u the indication that this
+is your desired checkbox)
+6. if condition to make the selection
+...................................................................................................
+Drop Down:
+
+Two types:
+
+1. Single select
+2.Multi select
+-------------
+
+When it comes to drop Down we have a class in selenium that help us interact with them
+
+------->Select class;---> in order to be able to use this class your drop down must be made in the DOM using the SELECT tag
+
+Single Select Drop Down--->
+Approach:
+1.inspect the Drop Down
+2.Check if it has the select tag
+3. Write down the locator to find the WebElement drop down
+4. Declare an object of the select class (pass the Web Element in the parameters)
+5. use methods from select class to select the desired option.
+---> SelectByVisibleText();
+        byValue();
+        byIndex();
+
+
+
+
+Multi Select Drop Down--->
+
+Approach:
+
+1.Inspect the DropDown
+2.Check if it has the select tag
+3. Write down the locator to find the WEbElment drop down
+4.Declare an object of the select class (pass the Web Element in the parameters)
+5. use methods to select the desired  option
